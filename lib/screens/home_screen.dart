@@ -38,11 +38,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Text('InstaApp'),
+        backgroundColor: Color(0xff3954a5),
+        title: Text('InstaApp', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700),),
         actions: [
           IconButton(
-            icon: Icon(Icons.logout),
+            icon: Icon(Icons.logout, color: Colors.white,),
             onPressed: () {
               Provider.of<AuthProvider>(context, listen: false).logout();
             },
@@ -222,7 +222,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        backgroundColor: Color(0xff3954a5),
+        elevation: 0,
+        child: Icon(Icons.add, color: Colors.white, size: 30),
         onPressed: () async {
           final newPost = await Navigator.push(
             context,

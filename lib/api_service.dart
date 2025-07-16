@@ -6,7 +6,7 @@ import 'models/comment.dart';
 
 class ApiService {
   final Dio _dio = Dio(
-    BaseOptions(baseUrl: 'https://e21108be3c1a.ngrok-free.app/api'),
+    BaseOptions(baseUrl: 'https://017a35ec3809.ngrok-free.app/api'),
   );
   final storage = FlutterSecureStorage();
 

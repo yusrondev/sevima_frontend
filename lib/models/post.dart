@@ -46,6 +46,6 @@ class Post {
 
   String? get imageUrl {
     if (image == null) return null;
-    return 'https://ee878e1d034e.ngrok-free.app/storage/$image';
+    return '$image';
   }
 }

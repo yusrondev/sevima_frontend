@@ -53,6 +53,8 @@ class _HomeScreenState extends State<HomeScreen> {
           loading
               ? Center(child: CircularProgressIndicator())
               : RefreshIndicator(
+                backgroundColor: Colors.white,
+                color: Color(0xff3954a5),
                 onRefresh: () async => fetch(),
                 child: ListView.builder(
                   itemCount: posts.length,
